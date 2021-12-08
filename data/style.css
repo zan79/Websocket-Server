@@ -1,0 +1,128 @@
+/*
+ * Websocket Project for DC105
+ * 
+ * Group Members:
+ * Bryle Anthony Orevillo
+ * Glenn Gerald Dapitilla
+ * Melchizedek Cruel
+ * Lord Son Pabriga
+ * R.A. Patricia Corage
+ * 
+ * Hardware used:
+ * 
+ * NodeMCU ESP32 Dev Module
+ * WS2812b LED 16leds 
+ * 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    position: absolute;
+    margin: auto;
+    top: 80px;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#led-light {
+    position: relative;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#inner-circle {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#oled-display {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 80px;
+    background-color: black;
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-light {
+    color: white;
+}
+
+.header-container {
+    background-color: black;
+    padding: 10px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#toggleButton {
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 20px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: gray;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.color-button {
+    height: 50px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}

@@ -1,0 +1,61 @@
+<!-- /*
+ * Websocket Project for DC105
+ * 
+ * Group Members:
+ * Bryle Anthony Orevillo
+ * Glenn Gerald Dapitilla
+ * Melchizedek Cruel
+ * Lord Son Pabriga
+ * R.A. Patricia Corage
+ * 
+ * Hardware used:
+ * 
+ * NodeMCU ESP32 Dev Module
+ * WS2812b LED 16leds 
+ * 
+*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Websocket Server DC105</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="/server.js"></script>
+</head>
+
+<body>
+    <div class="header-container">
+        <h1 class="text-center text-light">Websocket Server DC105</h1>
+    </div>
+    <div class="container">
+        <h1 class="text-center">LED Control</h1>
+        <div id="led-light">
+            <div id="inner-circle">
+                <!-- <div id="oled-display">
+                    <h2 class="header text-center text-light"></h2>
+                    <h3 id="clients" class="text-center text-light"></h3>
+                </div> -->
+            </div>
+        </div>
+        <div class="flex-col">
+            <button id="toggleButton" onclick="onToggle()" disabled>OFF</button>
+        </div>
+        <div class="flex-row">
+            <button class="color-button" style="background-color: red;" id="redButton" onclick="onPressRed()"
+                disabled>RED</button>
+            <button class="color-button" style="background-color: green;" id="greenButton" onclick="onPressGreen()"
+                disabled>GREEN</button>
+            <button class="color-button" style="background-color: blue;" id="blueButton" onclick="onPressBlue()"
+                disabled>BLUE</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
